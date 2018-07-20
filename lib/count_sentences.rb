@@ -31,7 +31,7 @@ class String
   def count_sentences
     # binding.pry
 
-    new_var = self.gsub(/[^A-Za-z0-9\s]/i, '').split(" ")
+    new_var = self.split(/[[:punct:]]/)
     # binding.pry
     return new_var.count
   end
